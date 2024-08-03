@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array loops</title>
+</head>
+<body>
+    <ol id="Subject"></ol>
+
+    <script>
+        const Subjects = ['Physics', 'Maths', 'English', 'Science'];
+//For loop 
+        // function displayAllSubject() {
+        //     const subjectList = document.getElementById('Subject'); // Corrected ID to 'Subject'
+
+        //     for (let i = 0; i < Subjects.length; i++) {
+        //         const listItem = document.createElement('li');
+        //         listItem.textContent = Subjects[i];
+        //         subjectList.appendChild(listItem); // Append each new <li> to <ol>
+        //     }
+        // }
+
+
+
+// For in loop
+
+        //     function displayAllSubject() {
+        //     const subjectList = document.getElementById('Subject'); // Corrected ID to 'Subject'
+
+        //     for (allSubj in Subjects) {
+        //         const listItem = document.createElement('li');
+        //         listItem.textContent = Subjects[allSubj];
+        //         subjectList.appendChild(listItem); // Append each new <li> to <ol>
+        //     }
+        // }
+
+// For of loop
+        //     function displayAllSubject() {
+        //     const subjectList = document.getElementById('Subject'); // Corrected ID to 'Subject'
+
+        //     for (allSubj of Subjects) {
+        //         const listItem = document.createElement('li');
+        //         listItem.textContent = allSubj;
+        //         subjectList.appendChild(listItem); // Append each new <li> to <ol>
+        //     }
+        // }
+
+         
+// ForEach loop
+
+
+    function displayAllSubject() {
+
+        Subjects.forEach((subj) => {
+            document.getElementById('Subject').innerHTML += `<li>${subj}</li>`;
+        })
+
+    }
+
+
+
+
+    displayAllSubject();
+    </script>
+</body>
+</html>
